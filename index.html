@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Appeal for Lucy Bans!">
+  <title>Appeal Form</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">Appeal Form</h2>
+  <aside>
+       <p>
+           Appeal form for Lucy</p>
+           <p>Please answer this form honestly
+       </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="style.css">
+
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="discordlib@gmail.com"
+  action="https://script.google.com/a/iusd.org/macros/s/AKfycbzvAEKsi4zoflG-Do-inxREL4ZfW0eD1MwFPaQ5Hg/exec">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+      <fieldset class="pure-group">
+        <label for="name">Your discord name: </label>
+        <input id="name" name="name" required placeholder="eg. Lucy#7485" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="id">Your Discord id: </label>
+        <textarea id="id" name="id" rows="1"
+        required placeholder="Your id could be copied in developer mode eg. 627370793369600011"></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"><em>Your</em> Email Address:</label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="your.name@email.com"/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="rule">What rule did you break?</label>
+        <input id="rule" name="rule" required placeholder="Lucy's TOS" />
+      </fieldset>
+                                                         
+    <fieldset class="pure-group">
+        <label for="reason">Why should we unban you?</label>
+        <input id="reason" name="reason" required placeholder="I did that unintentionally" />
+      </fieldset>
+                                                        
+                                                        
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for submitting it!
+        Lucy Will send you a message when you are unbanned. We might also send notification to the email you provided.
+        If you have any problems or concerns, email lucynotification@gmail.com
+        We approves appeals daily at 3:30 pm - 4:00 PST time on weekdays and 8:00 am - 8:00 pm PST time on weekends
+        </h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="form-submission-handler.js"></script>
+<!-- END -->
+
+</body>
+</html>
